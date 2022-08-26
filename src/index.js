@@ -21,7 +21,7 @@ if(screenWidth < 1000){
   Array.from(boxes).forEach((element) => {
     element.style.flexWrap = "wrap";
     element.style.margin = "0em 0em";
-      element.style.padding = "2em 1em";
+    element.style.padding = "2em 1em";
   });
   Array.from(textboxes).forEach((element) => {
     element.style.padding = "0em 0em";
@@ -54,7 +54,7 @@ window.addEventListener("resize", function() {
     Array.from(boxes).forEach((element) => {
       element.style.flexWrap = "wrap";
       element.style.margin = "0em 0em";
-        element.style.padding = "2em 1em";
+      element.style.padding = "2em 1em";
     });
     Array.from(textboxes).forEach((element) => {
       element.style.padding = "0em 0em";
@@ -96,13 +96,13 @@ var sandwichmenu;
 window.addEventListener("scroll", function(){
   var banner = document.querySelector(".main_banner_container");
   if (window.scrollY + top_nav_height > banner.offsetTop + banner.offsetHeight + top_nav_height){
-  var result = nav.offsetHeight;
-  section.style.marginTop = result + "px";
-  nav.classList.add("top_fixed");
-  nav.style.width = "100%";
-  nav.appendChild(top_page_btn);
+    var result = nav.offsetHeight;
+    section.style.marginTop = result + "px";
+    nav.classList.add("top_fixed");
+    nav.style.width = "100%";
+    nav.appendChild(top_page_btn);
 
-  top_page_btn.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 30 384 500"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M352 352c-8.188 0-16.38-3.125-22.62-9.375L192 205.3l-137.4 137.4c-12.5 12.5-32.75 12.5-45.25 0s-12.5-32.75 0-45.25l160-160c12.5-12.5 32.75-12.5 45.25 0l160 160c12.5 12.5 12.5 32.75 0 45.25C368.4 348.9 360.2 352 352 352z"/></svg>';
+    top_page_btn.innerHTML = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 30 384 500"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M352 352c-8.188 0-16.38-3.125-22.62-9.375L192 205.3l-137.4 137.4c-12.5 12.5-32.75 12.5-45.25 0s-12.5-32.75 0-45.25l160-160c12.5-12.5 32.75-12.5 45.25 0l160 160c12.5 12.5 12.5 32.75 0 45.25C368.4 348.9 360.2 352 352 352z"/></svg>';
 
   }
   else{
@@ -142,7 +142,7 @@ function expand() {
     scroll();
   } else {
     this.innerHTML = this.dataset.hidetext;
-  
+
   }
   showContent.classList.toggle("expand-active");
 }

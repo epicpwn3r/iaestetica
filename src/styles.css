@@ -32,6 +32,7 @@ section{
 .social_link{
 
   width: 5%;
+  min-width: 50px;
   margin:0 5%;
   fill:rgba(148, 83, 8, 0.4);
 }
